@@ -116,7 +116,7 @@ function Edit() {
                   // uploaded image
                   :
                   <img className='z-52' style={{ width: '100px', height: '100px', borderRadius: '50%' }}
-                    src={preview ? preview : `${server_url}/uploads/${existingImage}`} alt="profile" />
+                    src={preview ? preview : existingImage} alt="profile" />
               }
 
 

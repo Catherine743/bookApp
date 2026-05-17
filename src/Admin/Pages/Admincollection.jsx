@@ -116,8 +116,7 @@ function Admincollection() {
                   <div className='flex items-center mt-3'>
                     {user?.picture ?
                       <img style={{ borderRadius: '50%' }} width={'100px'} height={'100px'}
-                        src={user?.picture.startsWith('https://lh3.googleusercontent.com/') ?
-                          user?.picture : `${server_url}/uploads/${user?.picture}`} alt="user" />
+                        src={user?.picture} alt="user" />
                       :
                       <img width={'100px'} height={'100px'} style={{ borderRadius: '50%' }}
                         src="https://img.freepik.com/premium-vector/man-character_665280-46970.jpg" alt="user" />}

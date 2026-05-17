@@ -136,8 +136,8 @@ function Profile() {
       console.log("Error");
     }
   }
-  
-  const removeBooks = async(id) => {
+
+  const removeBooks = async (id) => {
     const token = sessionStorage.getItem("token")
     if (token) {
       const reqHeader = {
@@ -159,7 +159,7 @@ function Profile() {
       <Header />
       <div style={{ height: '200px' }} className='bg-black'></div>
       <div style={{ width: '230px', height: '230px', borderRadius: '50%', marginLeft: '70px', marginTop: '-130px' }} className='bg-white p-3'>
-        <img src={dp == "" ? "https://cdn-icons-png.flaticon.com/512/149/149071.png" : dp.startsWith('https://lh3.googleusercontent.com/') ? dp : `${server_url}/uploads/${dp}`} alt="profile" style={{ width: '200px', height: '200px', borderRadius: '50%' }} />
+        <img src={dp ? dp : "https://cdn-icons-png.flaticon.com/512/149/149071.png"} alt="profile" style={{ width: '200px', height: '200px', borderRadius: '50%' }} />
       </div>
       <div className='md:flex justify-between px-20 mt-5'>
         <div className='flex items-center'>
