@@ -137,7 +137,7 @@ function Viewbook() {
 
                 {
                   book?.uploadImg?.length > 0 ? book.uploadImg.map((filename, index) => (
-                    <img key={index} width={'250px'} height={'250px'} className='mx-2 md:mb-0 mb-2' src={filename} alt="book images" />
+                    <img key={index} width={'250px'} height={'250px'} className='mx-2 md:mb-0 mb-2' src={`${server_url}/uploads/${filename}`} alt="book images" />
                   )) :
                     <p>Nothing to display</p>
                 }
